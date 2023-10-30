@@ -12,8 +12,9 @@ Shuai Yang*, ZhiFei Chen*, Pengguang Chen, Xi Fang, Shu Liu, Yingcong Chen
 
 
 ## Installation
-1. Create an environment along with the basic requirements using `conda env create -f environment.yml`.
-2. Activate it `conda activate diff`.
+Create an environment with python==3.8.0 `conda create -n diff python==3.8.0`.
+Activate it `conda activate diff`.
+Install basic requirements `pip install -r requirements.txt`.
 
 ## Getting Started
 ### Train your own Defect-Gen
