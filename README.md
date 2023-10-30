@@ -12,12 +12,12 @@ Shuai Yang*, ZhiFei Chen*, Pengguang Chen, Xi Fang, Shu Liu, Yingcong Chen
 
 
 ## Installation
-Create an environment with python==3.8.0 `conda create -n diff python==3.8.0`.
-Activate it `conda activate diff`.
-Install basic requirements `pip install -r requirements.txt`.
+1. Create an environment with python==3.8.0 `conda create -n diff python==3.8.0`.
+2. Activate it `conda activate diff`.
+3. Install basic requirements `pip install -r requirements.txt`.
 
 ## Getting Started
-### Train your own Defect-Gen
+### Train your own Defect-Gens
 1. Specify the number of defect types in `train_[large/small].sh` corresponds to your own needs. 
 2. Prepare your config yaml file for both large and small models. The input and output channel should be a total of the number of defect types, RGB channels, background channels(if needed).
 3. Run it with `sh train_[large/small].sh`
