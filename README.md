@@ -7,7 +7,7 @@ Defect inspection is paramount within the closed-loop manufacturing system. Howe
 <p align="center"> <img src="docs/pipeline.png" width="100%"> </p>
 
 For more details, please refer to:
-**Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [[Paper](https://arxiv.org/abs/2310.17316)[Project Page](https://envision-research.github.io/DefectSpectrum/)]** <br />
+**Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/DefectSpectrum/)]** <br />
 Shuai Yang*, ZhiFei Chen*, Pengguang Chen, Xi Fang, Shu Liu, Yingcong Chen
 
 
@@ -26,7 +26,7 @@ Shuai Yang*, ZhiFei Chen*, Pengguang Chen, Xi Fang, Shu Liu, Yingcong Chen
 2. Update your checkpoints in `inference.sh`.
 3. Specify your switching point for the large and small model in `--step_inference`. 
 4. Specify your defective types in `--num_defect`.
-2. Run inference with. `sh inference.sh`.
+2. Run inference with `sh inference.sh`.
 
 ## Citation 
 If you find this project useful in your research, please consider citing:
@@ -41,3 +41,7 @@ If you find this project useful in your research, please consider citing:
       primaryClass={cs.CV}
 }
 ```
+## Acknowledgement
+-  This work is built upon the [Guided-Diffusion](https://github.com/openai/guided-diffusion) and [SinDiffusion](https://github.com/weilunwang/sindiffusion).
+-  The datasets we adopted come from [Apple-Vision](https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets), [MVTec-AD](https://www.mvtec.com/company/research/datasets/mvtec-ad), [DAGM-2007](https://conferences.mpi-inf.mpg.de/dagm/2007/prizes.html) and [Cotton](https://www.cottoninc.com/quality-products/textile-resources/fabric-defect-glossary/).
+-  We would like to extend our greatest thanks to those who helped at SmartMore Corp., regardless of whether their contributions are recognized or remain behind the scenes.
