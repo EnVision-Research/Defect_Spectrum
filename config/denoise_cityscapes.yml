@@ -1,0 +1,63 @@
+diffusion:
+  target: diffusion.base_diffusion.ColdDiffusion
+  params:
+    parameterization: x0
+    schedule: cosine
+    num_timestep: 100
+
+model:
+  target: models.unet.openaiunet.UNetModel
+  params:
+    in_channels: 3
+    out_channels: 3
+    model_channels: 128
+    dropout: 0.3
+    attention_downsample:
+    - 8
+    - 16
+    - 32
+    num_res_blocks: 2
+    channel_mult:
+    - 1
+    - 1
+    - 2
+    - 2
+    - 4
+    - 4
+  ckpt:
+
+data:
+  bs_per_gpu: 1
+  num_workers: 8
+  target: dataset.base_dataset.ImageDataset
+  params:
+    dir: /home/shuaiyang/data/cityscapes/train
+    resolution:
+    - 128
+    - 256
+    h_flip: True
+
+optimizer:
+  params:
+    lr: 0.0001
+    weight_decay: 0.002
+
+train:
+  iterations: 1000000
+  log_image_interval: 1000
+  save_ckpt_interval: 10000
+  eval_interval: 1
+
+eval:
+  base_dataset_path: /home/shuaiyang/data/cityscapes/train/aachen
+  num_samples: 4
+#  data:
+#    bs_per_gpu: 2
+#    num_workers: 8
+#    target: dataset.base_dataset.ImageDataset
+#    params:
+#      dir: /home/shuaiyang/data/cityscapes/train/bochum
+#      resolution:
+#        - 128
+#        - 256
+#      h_flip: False

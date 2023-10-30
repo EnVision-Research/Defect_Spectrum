@@ -1,0 +1,67 @@
+diffusion:
+  target: diffusion.latent_diffusion.LatentColdDiffusion
+  params:
+    parameterization: x0
+    schedule: inverse_proportion
+    num_timestep: 200
+
+    autoencoder:
+      target: models.autoencoder.vqvae.VQInterface2
+      params:
+        in_channel: 3
+        channel: 128
+        out_channel: 3
+        n_res_block: 2
+        n_res_channel: 32
+        embed_dim: 3
+        n_embed: 8192
+        ckpt_path: /home/luozhouwang/projects/unified-diffusion/work_dir/autoencoder/vq2-8192-dogcat/checkpoint/ckpt_030000.pt
+
+model:
+  target: models.unet.openaiunet.UNetModel
+  params:
+    in_channels: 6
+    out_channels: 6
+    model_channels: 224
+    dropout: 0.3
+    attention_downsample:
+    - 8
+    - 16
+    - 32
+    num_res_blocks: 2
+    channel_mult:
+    - 1
+    - 2
+    - 3
+    - 4
+    num_head_channels: 32
+  ckpt: null
+
+data:
+  bs_per_gpu: 16
+  num_workers: 8
+  target: dataset.base_dataset.PairImageDataset
+  params:
+    src_dir: /home/luozhouwang/datasets/afhq/train/dog
+    tgt_dir: /home/luozhouwang/datasets/afhq/train/cat
+    resolution:
+    - 256
+    - 256
+    h_flip: true
+    pair: false
+    
+optimizer:
+  params:
+    lr: 0.0001
+    weight_decay: 0.002
+
+train:
+  iterations: 1000000
+  log_image_interval: 10000
+  save_ckpt_interval: 10000
+  eval_interval: 1.0e+6
+  max_images: 8
+
+eval:
+  ref_dataset_path: /home/luozhouwang/datasets/afhq/train/dog
+  num_samples: 40

@@ -1,0 +1,47 @@
+diffusion:
+  target: diffusion.base_diffusion.ColdDiffusion
+  params:
+    parameterization: x0
+    schedule: cosine
+    num_timestep: 1000
+
+model:
+  target: models.unet.unet_receptive.UNetModel
+  params:
+    image_size: 256
+    in_channels: 6
+    out_channels: 6
+    model_channels: 192
+    #dropout: 0.3
+    # attention_downsample:
+    # - 8
+    # - 16
+    # - 32
+    attention_resolutions: 2
+    num_res_blocks: 2
+    num_head_channels: 16
+    channel_mult:
+    - 1
+    - 2
+    - 4
+  ckpt: 
+
+data:
+  bs_per_gpu: 2
+  num_workers: 1
+  params:
+    dir:  /home/zfchen/working/cotton_fabric/cotton_fabric_mask
+    resolution: 256
+    num_image_train: 50
+
+optimizer:
+  params:
+    lr: 0.0001
+    weight_decay: 0.002
+
+train:
+  iterations: 160000
+  log_image_interval: 10000
+  save_ckpt_interval: 10000
+  max_images: 8
+  eval_interval: 10

@@ -1,0 +1,50 @@
+diffusion:
+  target: diffusion.base_diffusion.ColdDiffusion
+  params:
+    parameterization: x0
+    schedule: inverse_proportion
+    num_timestep: 1000
+
+model:
+  target: models.unet.openaiunet.UNetModel
+  params:
+    in_channels: 3
+    out_channels: 3
+    model_channels: 128
+    dropout: 0.3
+    attention_downsample:
+    - 8
+    - 16
+    - 32
+    num_res_blocks: 2
+    channel_mult:
+    - 1
+    - 1
+    - 2
+    - 2
+    - 4
+    - 4
+  ckpt: null
+
+data:
+  bs_per_gpu: 8
+  num_workers: 8
+  target: dataset.base_dataset.PairImageDataset
+  params:
+    src_dir: /newdata/sharedir/research/shuaiyang/data/cityscapes_pair/labels
+    tgt_dir: /newdata/sharedir/research/shuaiyang/data/cityscapes_pair/images
+    resolution:
+    - 128
+    - 256
+    h_flip: true
+    pair: true
+
+optimizer:
+  params:
+    lr: 0.0001
+    weight_decay: 0.002
+
+train:
+  iterations: 1000000
+  log_image_interval: 10000
+  save_ckpt_interval: 50000
