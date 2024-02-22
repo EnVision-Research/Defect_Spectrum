@@ -6,5 +6,5 @@ python -m torch.distributed.launch \
 train.py \
 --work_dir /home/zfchen/working/diff_aug/COTTON_dataset/large_recep \
 --config /home/zfchen/working/diff_aug/config/small_recep.yml \
---seperate_channel 0 \
+--seperate_channel_loss 0 \
 --num_defect 2
