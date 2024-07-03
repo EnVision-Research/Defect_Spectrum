@@ -1,4 +1,4 @@
-# Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics
+# Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [ECCV 2024]
 
 This is the official implementation of the synthetic data part of ***Defect Spectrum***.
 
