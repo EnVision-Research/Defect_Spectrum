@@ -1,5 +1,8 @@
 # Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [ECCV 2024]
 
+**[[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/Andyson/DefectSpectrum)]** <br />
+
+
 This is the official implementation of the synthetic data part of ***Defect Spectrum***.
 
 Defect inspection is paramount within the closed-loop manufacturing system. However, existing datasets for defect inspection often lack the precision and semantic granularity required for practical applications. In this paper, we introduce the **Defect Spectrum**, a comprehensive benchmark that offers **precise**, **semantic-abundant**, and **large-scale** annotations for a wide range of industrial defects.
@@ -11,9 +14,6 @@ Furthermore, we introduce **Defect-Gen**, a two-stage diffusion-based generator 
 
 <p align="center"> <img src="docs/pipeline.png" width="100%"> </p>
 
-For more details, please refer to:
-**Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/Andyson/DefectSpectrum)]** <br />
-Shuai Yang*, ZhiFei Chen*, Pengguang Chen, Xi Fang, Shu Liu, Yingcong Chen
 
 
 ## Installation
