@@ -1,6 +1,6 @@
 # Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [ECCV 2024]
 
-**[[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/Andyson/DefectSpectrum)]** <br />
+**[[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/DefectSpectrum/Defect_Spectrum)]** <br />
 
 
 This is the official implementation of the synthetic data part of ***Defect Spectrum***.
