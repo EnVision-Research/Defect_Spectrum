@@ -45,7 +45,12 @@ Furthermore, we introduce **Defect-Gen**, a two-stage diffusion-based generator 
 Two-staged defect generation pipeline
 </div>
 
+This generative model excels in producing diverse and high-quality images, even when trained on limited data.
+<div align="center"> 
+<img src="docs/qualitative.png" width="80%"> 
 
+Qualitative Comparison between Defect-Gen and other generation methods
+</div>
 
 ## 🛠️ Installation
 1. Create an environment with python==3.8.0 `conda create -n diff python==3.8.0`.
