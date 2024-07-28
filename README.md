@@ -29,7 +29,7 @@ Industrial datasets often lack detailed defect annotations, providing only binar
 
 <p align="center"> <img src="docs/sup_anno_1.png" width="80%"> 
 
-      Example annotation from MVTec AD Dataset
+Example annotation from MVTec AD Dataset
 
 </p>
 
@@ -40,7 +40,7 @@ Furthermore, we introduce **Defect-Gen**, a two-stage diffusion-based generator 
 
 <p align="center"> <img src="docs/pipeline.png" width="80%"> 
 
-      Two-staged defect generation pipeline
+Two-staged defect generation pipeline
 </p>
 
 
@@ -52,8 +52,8 @@ Furthermore, we introduce **Defect-Gen**, a two-stage diffusion-based generator 
 
 ## 🚀 Getting Started
 ### Train your own Defect-Gens
-1. Specify the number of defect types in `train_[large/small].sh` that corresponds to your own needs. e.g. If the "Capsule" object has 7 defective classes, set the "--num_defect" to 7. 
-2. Prepare your config yaml file for both large and small models. The "-input channel" and "-output channel" should be a total of the number of defect types, RGB channels, and background channels(if needed). e.g. For an object that has 7 defective classes, the number of input/output channels should be set to 10. (excluding background)
+1. Specify the number of defect types in `train_[large/small].sh` that corresponds to your own needs. e.g. If the "Capsule" object has 7 defective classes, set the `--num_defect` to 7. 
+2. Prepare your config yaml file for both large and small models. The `-input channel` and `-output channel` should be a total of the number of defect types, RGB channels, and background channels(if needed). e.g. For an object that has 7 defective classes, the number of input/output channels should be set to 10. (excluding background)
 3. Run it with `sh train_[large/small].sh`
 
 ### 🚀 Inference
