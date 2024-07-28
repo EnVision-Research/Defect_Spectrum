@@ -27,8 +27,9 @@ Defect inspection is paramount within the closed-loop manufacturing system. Howe
 ## 💡 Dataset Reannotation
 Industrial datasets often lack detailed defect annotations, providing only binary masks or misclassifications. We introduce the Defect Spectrum, a comprehensive dataset with refined, large-scale annotations for various industrial defects. Using four industrial benchmarks, Defect Spectrum enhances annotation accuracy, capturing subtle and previously missed defects. Our dataset includes rich semantic annotations, identifying multiple defect types per image, and offers descriptive captions for each sample, facilitating future Vision Language Model research.
 
-<p align="center"> <img src="docs/sup_anno_1.png" width="100%"> 
-Example annotation from MVTec AD Dataset
+<p align="center"> <img src="docs/sup_anno_1.png" width="80%"> 
+
+      Example annotation from MVTec AD Dataset
 
 </p>
 
@@ -38,7 +39,8 @@ Furthermore, we introduce **Defect-Gen**, a two-stage diffusion-based generator 
 
 
 <p align="center"> <img src="docs/pipeline.png" width="80%"> 
-Two-staged defect generation pipeline
+
+      Two-staged defect generation pipeline
 </p>
 
 
