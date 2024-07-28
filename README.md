@@ -3,7 +3,7 @@
 **[[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/DefectSpectrum/Defect_Spectrum)]** <br />
 
 
-This is the official implementation of the synthetic data part of ***Defect Spectrum***.
+## 🎏 Abstract
 
 Defect inspection is paramount within the closed-loop manufacturing system. However, existing datasets for defect inspection often lack the precision and semantic granularity required for practical applications. In this paper, we introduce the **Defect Spectrum**, a comprehensive benchmark that offers **precise**, **semantic-abundant**, and **large-scale** annotations for a wide range of industrial defects.
 
