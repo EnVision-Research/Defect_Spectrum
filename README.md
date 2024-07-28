@@ -1,5 +1,5 @@
 # Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [ECCV 2024]
-[Shuai Yang]()$^{{\*}}$, [ZhiFei Chen]()$^{{\*}}$, [Pengguang Chen](), [Xi Fang](), [Yixun Liang](), [Shu Liu](), [Yingcong Chen](https://www.yingcong.me)$^{\**}$
+[Shuai Yang](https://andysonys.github.io/)$^{{\*}}$, [ZhiFei Chen]()$^{{\*}}$, [Pengguang Chen](), [Xi Fang](), [Yixun Liang](), [Shu Liu](), [Yingcong Chen](https://www.yingcong.me)$^{\**}$
 
 HKUST(GZ), HKUST, SmartMore Corp.
 
