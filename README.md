@@ -1,7 +1,8 @@
 # Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics [ECCV 2024]
 
 **[[Paper](https://arxiv.org/abs/2310.17316)][[Project Page](https://envision-research.github.io/Defect_Spectrum/)][[Dataset](https://huggingface.co/datasets/DefectSpectrum/Defect_Spectrum)]** <br />
-
+<a href="https://arxiv.org/abs/2310.17316"><img src="https://img.shields.io/badge/arXiv-2310.17316-b31b1b.svg" height=22.5></a>
+<a href="https://envision-research.github.io/Defect_Spectrum/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
 
 ## 🎏 Abstract
 
